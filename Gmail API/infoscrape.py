@@ -4,6 +4,7 @@ import pickle
 import os
 import csv  # Import the CSV module
 
+#trivial change
 # Load credentials from the saved token.pickle file
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
