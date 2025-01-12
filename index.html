@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Automation App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      #app {
+        background-color: white;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border: 2px solid #000;
+      }
+      h1 {
+        margin: 0;
+      }
+    </style>
+    <script>
+      function redirectToConfig() {
+        window.location.href = "config.html";
+      }
+      window.onload = () => {
+        console.log('Page loaded. Redirecting in 5 seconds.');
+        setTimeout(redirectToConfig, 3000); // Redirect after 10 seconds
+      };
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>My Automation App</h1>
+    </div>
+  </body>
+</html>

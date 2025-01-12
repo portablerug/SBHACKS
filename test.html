@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Redirection</title>
+    <script>
+      function redirectToConfig() {
+        console.log('Redirecting to config.html');
+        window.location.href = "config.html";
+      }
+      window.onload = () => {
+        console.log('Page loaded. Redirecting in 5 seconds.');
+        setTimeout(redirectToConfig, 5000); // Redirect after 5 seconds
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Testing Redirection</h1>
+  </body>
+</html>
