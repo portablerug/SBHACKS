@@ -2,70 +2,36 @@
 <html>
   <head>
     <title>Setup Your App</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f0f0f0;
-      }
-      #config-app {
-        background-color: white;
-        padding: 80px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        width: 300px;
-      }
-      h1 {
-        margin-bottom: 20px;
-      }
-      .checkbox-group {
-        text-align: left;
-        margin-bottom: 20px;
-      }
-      .checkbox-group input {
-        margin-right: 10px;
-      }
-      button {
-        padding: 10px;
-        font-size: 16px;
-        margin-top: 10px;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <div id="config-app">
       <h1>App Name</h1>
-      <form>
+      <form id="config-form">
         <div class="checkbox-group">
           <label>
-            <input type="checkbox" name="option1"> Visual Studio Code
+            <input type="checkbox" name="option" value="Visual Studio Code"> Visual Studio Code
           </label><br>
           <label>
-            <input type="checkbox" name="option2"> Google Chrome
+            <input type="checkbox" name="option" value="Google Chrome"> Google Chrome
           </label><br>
           <label>
-            <input type="checkbox" name="option3"> Gmail
+            <input type="checkbox" name="option" value="Gmail"> Gmail
           </label><br>
           <label>
-            <input type="checkbox" name="option4"> Unity
+            <input type="checkbox" name="option" value="Unity"> Unity
           </label><br>
           <label>
-            <input type="checkbox" name="option5"> Netflix
+            <input type="checkbox" name="option" value="Netflix"> Netflix
           </label><br>
           <label>
-            <input type="checkbox" name="option6"> Matlab
+            <input type="checkbox" name="option" value="Matlab"> Matlab
           </label>
         </div>
         <button type="submit">Submit</button>
       </form>
     </div>
-
-    
   </body>
 </html>
