@@ -1,0 +1,81 @@
+@keyframes borderAnimation {
+    0% { border-color: #ff0000; }
+    16.67% { border-color: #ff7f00; }
+    33.33% { border-color: #ffff00; }
+    50% { border-color: #00ff00; }
+    66.67% { border-color: #0000ff; }
+    83.33% { border-color: #4b0082; }
+    100% { border-color: #9400d3; }
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  #config-app {
+    background-color: #1e1e1e;
+    padding: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 600px;
+  }
+  
+  #tasks {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 600px;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .checkbox-group {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .checkbox-group label {
+    color: #ffffff;
+  }
+  
+  .checkbox-group input[type="checkbox"]:checked + label {
+    animation: borderAnimation 4s infinite;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    animation: borderAnimation 4s infinite;
+  }
+  
+  button:hover {
+    background-color: #222222;
+  }
+  
